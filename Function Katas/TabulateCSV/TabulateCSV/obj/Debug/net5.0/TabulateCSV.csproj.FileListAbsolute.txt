@@ -1,0 +1,16 @@
+C:\Users\dhaoui\Documents\Github\CCD-School-Coding-Dojo\Function Katas\TabulateCSV\TabulateCSV\bin\Debug\net5.0\TabulateCSV.exe
+C:\Users\dhaoui\Documents\Github\CCD-School-Coding-Dojo\Function Katas\TabulateCSV\TabulateCSV\bin\Debug\net5.0\TabulateCSV.deps.json
+C:\Users\dhaoui\Documents\Github\CCD-School-Coding-Dojo\Function Katas\TabulateCSV\TabulateCSV\bin\Debug\net5.0\TabulateCSV.runtimeconfig.json
+C:\Users\dhaoui\Documents\Github\CCD-School-Coding-Dojo\Function Katas\TabulateCSV\TabulateCSV\bin\Debug\net5.0\TabulateCSV.runtimeconfig.dev.json
+C:\Users\dhaoui\Documents\Github\CCD-School-Coding-Dojo\Function Katas\TabulateCSV\TabulateCSV\bin\Debug\net5.0\TabulateCSV.dll
+C:\Users\dhaoui\Documents\Github\CCD-School-Coding-Dojo\Function Katas\TabulateCSV\TabulateCSV\bin\Debug\net5.0\ref\TabulateCSV.dll
+C:\Users\dhaoui\Documents\Github\CCD-School-Coding-Dojo\Function Katas\TabulateCSV\TabulateCSV\bin\Debug\net5.0\TabulateCSV.pdb
+C:\Users\dhaoui\Documents\Github\CCD-School-Coding-Dojo\Function Katas\TabulateCSV\TabulateCSV\obj\Debug\net5.0\TabulateCSV.csprojAssemblyReference.cache
+C:\Users\dhaoui\Documents\Github\CCD-School-Coding-Dojo\Function Katas\TabulateCSV\TabulateCSV\obj\Debug\net5.0\TabulateCSV.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dhaoui\Documents\Github\CCD-School-Coding-Dojo\Function Katas\TabulateCSV\TabulateCSV\obj\Debug\net5.0\TabulateCSV.AssemblyInfoInputs.cache
+C:\Users\dhaoui\Documents\Github\CCD-School-Coding-Dojo\Function Katas\TabulateCSV\TabulateCSV\obj\Debug\net5.0\TabulateCSV.AssemblyInfo.cs
+C:\Users\dhaoui\Documents\Github\CCD-School-Coding-Dojo\Function Katas\TabulateCSV\TabulateCSV\obj\Debug\net5.0\TabulateCSV.csproj.CoreCompileInputs.cache
+C:\Users\dhaoui\Documents\Github\CCD-School-Coding-Dojo\Function Katas\TabulateCSV\TabulateCSV\obj\Debug\net5.0\TabulateCSV.dll
+C:\Users\dhaoui\Documents\Github\CCD-School-Coding-Dojo\Function Katas\TabulateCSV\TabulateCSV\obj\Debug\net5.0\ref\TabulateCSV.dll
+C:\Users\dhaoui\Documents\Github\CCD-School-Coding-Dojo\Function Katas\TabulateCSV\TabulateCSV\obj\Debug\net5.0\TabulateCSV.pdb
+C:\Users\dhaoui\Documents\Github\CCD-School-Coding-Dojo\Function Katas\TabulateCSV\TabulateCSV\obj\Debug\net5.0\TabulateCSV.genruntimeconfig.cache
