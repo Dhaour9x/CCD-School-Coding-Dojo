@@ -7,41 +7,68 @@ namespace TabulateCSV
 {
     class CSVHelper
     {
-        static string nameAndPathOfFile = "data.csv";
-        public string Name { get; set; }
-        public string Street { get; set; }
-        public string City { get; set; }
-        public int Age { get; set; }
-
-        public CSVHelper( string fileName)
-        {
-            string[] csvEntries = fileName.Split(';');
-            Name = csvEntries[0];
-            Street = csvEntries[1];
-            City = csvEntries[2];
-            Age = Convert.ToInt32(csvEntries[3]);
-
-        } 
+        static readonly string nameAndPathOfFile = @"C:\Users\dhaoui\Documents\Github\CCD-School-Coding-Dojo\Function Katas\TabulateCSV\data.csv";
 
         static void Main(string[] args)
         {
-            Console.WriteLine(Tabulate("data.csv"));
+            var result = Tabulate(File.ReadAllLines(nameAndPathOfFile));
+            foreach(var item in result)
+            {
+                Console.WriteLine(item);
+            }
+
         }
 
-        public static IEnumerable<string> Tabulate(string CSV_zeilen)
+        public static IEnumerable<string> Tabulate(IEnumerable<string> CSV_zeilen)
         {
-            //We change file extension here to make sure it's a .csv file
-            string[] lines = File.ReadAllLines(CSV_zeilen);
+            List<string> allStrings = new();
 
-            //lines.Select allows me to project each line as a CoutryModel.
-            //This will give me an IEnumerable<CountryModel> back.
-            return lines.Select(line =>
+            List<string> retVal = new();
+            var spalte = 0;
+            int[] max = new int[100];
+            for (int i = 0; i < CSV_zeilen.Count(); i++)
             {
-                string[] data = line.Split(';');
-                // we return a country with the data in order.
 
-                return data[0] + "|" + data[1] + "|" + data[2] + "|" + data[3];
-            });
+                var zeile = CSV_zeilen.ElementAt(i).Split(";");
+                //allStrings.AddRange(zeile);
+                //spalte = zeile.Length;
+                
+                for(spalte = 0; spalte < zeile.Length; spalte++)
+                {
+                    max[spalte] = Math.Max(zeile[spalte].Length, max[spalte]);
+                }
+
+            }
+
+            //int[] max = new int[spalte];
+            //for(int j = 0; j < allStrings.Count(); j++)
+            //{
+            //    var col = j % spalte;
+            //    max[col] = Math.Max(allStrings.ElementAt(j).Count(), max[col]);
+                
+            //}
+
+            for(int i = 0; i < CSV_zeilen.Count(); i++)
+            {
+                var headers = CSV_zeilen.ElementAt(i).Split(";");
+                string string_value = headers[0] + String.Concat(Enumerable.Repeat(" ", max[0] - headers[0].Length)) 
+                    + "|" + headers[1] + String.Concat(Enumerable.Repeat(" ", max[1] - headers[1].Length))
+                    + "|" + headers[2] + String.Concat(Enumerable.Repeat(" ", max[2] - headers[2].Length))
+                    + "|" + headers[3] + String.Concat(Enumerable.Repeat(" ", max[3] - headers[3].Length)) 
+                    + "|";
+                retVal.Add(string_value);
+                if (i == 0)
+                {
+                    var underline = String.Concat(Enumerable.Repeat("-", max[0]));
+                    underline += "+" + string.Concat(Enumerable.Repeat("-", max[1]));
+                    underline += "+" + string.Concat(Enumerable.Repeat("-", max[2]));
+                    underline += "+" + string.Concat(Enumerable.Repeat("-", max[3]));
+                    underline += "+";
+                    retVal.Add(underline);
+                }
+
+            }
+            return retVal;
         }
     }
 }
